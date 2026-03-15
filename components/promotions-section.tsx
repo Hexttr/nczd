@@ -18,7 +18,7 @@ export function PromotionsSection() {
             </p>
           </div>
 
-          <Button asChild variant="outline" className="rounded-full">
+          <Button asChild variant="outline" className="rounded-lg">
             <a href="https://nczd.ru/offers/">
               Все предложения
               <ArrowRight className="h-4 w-4" />
@@ -30,7 +30,7 @@ export function PromotionsSection() {
           {promotions.map((promo, index) => (
             <article
               key={`${promo.title}-${promo.price}-${index}`}
-              className="group flex h-full flex-col overflow-hidden rounded-[30px] border border-border bg-[linear-gradient(180deg,#ffffff_0%,#f7fbff_100%)] shadow-sm transition-all hover:-translate-y-1 hover:shadow-xl"
+              className="group flex h-full flex-col overflow-hidden rounded-xl border border-border bg-[linear-gradient(180deg,#ffffff_0%,#f7fbff_100%)] shadow-sm transition-all hover:-translate-y-1 hover:shadow-xl"
             >
               <div className="relative aspect-[16/10] overflow-hidden">
                 <Image
@@ -42,10 +42,10 @@ export function PromotionsSection() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0e4e7e]/90 via-[#0e4e7e]/35 to-transparent" />
                 <div className="absolute left-5 top-5 flex items-center gap-2">
-                  <span className="rounded-full bg-white/92 px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-primary">
+                  <span className="rounded-lg bg-white/92 px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-primary">
                     Акция
                   </span>
-                  <span className="rounded-full bg-white/15 px-3 py-1 text-xs font-semibold text-white backdrop-blur-sm">
+                  <span className="rounded-lg bg-white/15 px-3 py-1 text-xs font-semibold text-white backdrop-blur-sm">
                     {promo.category}
                   </span>
                 </div>
@@ -70,7 +70,7 @@ export function PromotionsSection() {
                 </div>
 
                 <div className="mt-auto pt-6">
-                  <Button asChild className="w-full rounded-full">
+                  <Button asChild className="w-full rounded-lg">
                     <a href="https://nczd.ru/form/appointment/">Записаться</a>
                   </Button>
                 </div>

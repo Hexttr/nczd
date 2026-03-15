@@ -16,7 +16,7 @@ export function StatsSection() {
 
         <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
           {stats.map((stat) => (
-            <div key={stat.label} className="rounded-[28px] border border-white/15 bg-white/8 px-5 py-6 backdrop-blur-sm">
+            <div key={stat.label} className="rounded-xl border border-white/15 bg-white/8 px-5 py-6 backdrop-blur-sm">
               <p className="text-3xl font-extrabold sm:text-4xl">{stat.value}</p>
               <p className="mt-3 text-sm leading-6 text-primary-foreground/75">{stat.label}</p>
             </div>

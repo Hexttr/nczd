@@ -7,13 +7,15 @@ export function HeroSection() {
     <section className="overflow-hidden bg-[radial-gradient(circle_at_top_left,rgba(26,100,166,0.13),transparent_26%),radial-gradient(circle_at_bottom_right,rgba(35,183,197,0.12),transparent_20%),linear-gradient(180deg,#eff7fd_0%,#ffffff_48%,#f7fbff_100%)]">
       <div className="grid w-full gap-10 px-4 py-10 sm:px-6 lg:grid-cols-[1.02fr_0.98fr] lg:px-8 lg:py-16 2xl:px-12 2xl:py-20">
         <div className="flex flex-col justify-center lg:pr-6">
-          <div className="inline-flex w-fit items-center gap-2 rounded-full border border-primary/15 bg-white/80 px-4 py-2 text-sm font-semibold text-primary shadow-sm">
+          <div className="inline-flex w-fit items-center gap-2 rounded-lg border border-primary/15 bg-white/80 px-4 py-2 text-sm font-semibold text-primary shadow-sm">
             <ShieldCheck className="h-4 w-4" />
             ФГАУ «НМИЦ здоровья детей» Минздрава России
           </div>
 
-          <h1 className="mt-6 max-w-5xl text-4xl font-extrabold leading-[0.98] tracking-tight text-foreground sm:text-5xl xl:text-7xl">
-            Современный детский медицинский центр экспертного уровня
+          <h1 className="mt-6 max-w-5xl text-2xl font-extrabold leading-[1.08] tracking-tight text-foreground sm:text-3xl xl:text-4xl">
+            Современный детский медицинский центр
+            <br />
+            <span className="text-primary">экспертного уровня</span>
           </h1>
 
           <p className="mt-6 max-w-3xl text-base leading-8 text-muted-foreground sm:text-lg">
@@ -21,13 +23,13 @@ export function HeroSection() {
           </p>
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-            <Button asChild size="lg" className="h-13 rounded-full px-7 text-base shadow-lg shadow-primary/20">
+            <Button asChild size="lg" className="h-13 rounded-lg px-7 text-base shadow-lg shadow-primary/20">
               <a href="https://nczd.ru/form/appointment/">
                 <CalendarPlus className="h-4 w-4" />
                 Заявка на прием
               </a>
             </Button>
-            <Button asChild variant="outline" size="lg" className="h-13 rounded-full border-primary/15 bg-white px-7 text-base">
+            <Button asChild variant="outline" size="lg" className="h-13 rounded-lg border-primary/15 bg-white px-7 text-base">
               <a href="https://nczd.ru/form/elektronnaya-priemnaya/">
                 Электронная приемная
                 <ArrowRight className="h-4 w-4" />
@@ -36,15 +38,15 @@ export function HeroSection() {
           </div>
 
           <div className="mt-10 grid gap-4 sm:grid-cols-3">
-            <div className="rounded-[28px] border border-border bg-white/90 p-5 shadow-sm">
+            <div className="rounded-xl border border-border bg-white/90 p-5 shadow-sm">
               <p className="text-3xl font-extrabold text-foreground">70</p>
               <p className="mt-2 text-sm leading-6 text-muted-foreground">подразделений и комплексный маршрут пациента</p>
             </div>
-            <div className="rounded-[28px] border border-border bg-white/90 p-5 shadow-sm">
+            <div className="rounded-xl border border-border bg-white/90 p-5 shadow-sm">
               <p className="text-3xl font-extrabold text-foreground">294</p>
               <p className="mt-2 text-sm leading-6 text-muted-foreground">врача, включая докторов и кандидатов наук</p>
             </div>
-            <div className="rounded-[28px] border border-border bg-primary p-5 text-primary-foreground shadow-lg shadow-primary/18">
+            <div className="rounded-xl border border-border bg-primary p-5 text-primary-foreground shadow-lg shadow-primary/18">
               <p className="text-3xl font-extrabold">24/7</p>
               <p className="mt-2 text-sm leading-6 text-primary-foreground/84">экстренная госпитализация и неотложная помощь</p>
             </div>
@@ -55,8 +57,8 @@ export function HeroSection() {
           <div className="absolute -left-6 top-14 hidden h-32 w-32 rounded-full bg-[#dcedfb] blur-3xl lg:block" />
           <div className="absolute bottom-10 right-2 hidden h-32 w-32 rounded-full bg-[#d8f3f0] blur-3xl lg:block" />
 
-          <div className="relative overflow-hidden rounded-[36px] border border-white/70 bg-white p-4 shadow-[0_28px_90px_rgba(16,45,83,0.12)] sm:p-5">
-            <div className="relative overflow-hidden rounded-[30px] bg-[#eef6fc]">
+          <div className="relative overflow-hidden rounded-xl border border-white/70 bg-white p-4 shadow-[0_28px_90px_rgba(16,45,83,0.12)] sm:p-5">
+            <div className="relative overflow-hidden rounded-lg bg-[#eef6fc]">
               <Image
                 src="/images/placeholders/hero-medical.svg"
                 alt="Визуальный блок главной страницы НЦЗД"
@@ -75,7 +77,7 @@ export function HeroSection() {
                     </p>
                   </div>
 
-                  <div className="rounded-[28px] border border-white/15 bg-white/10 p-5 backdrop-blur-sm">
+                  <div className="rounded-lg border border-white/15 bg-white/10 p-5 backdrop-blur-sm">
                     <div className="flex items-start gap-3">
                       <HeartHandshake className="mt-1 h-6 w-6 shrink-0 text-[#7de3e8]" />
                       <div>

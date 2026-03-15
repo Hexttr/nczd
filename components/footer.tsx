@@ -21,10 +21,10 @@ export function Footer() {
             </div>
 
             <div className="flex flex-col gap-3 sm:flex-row">
-              <Button asChild size="lg" className="rounded-full bg-white text-slate-950 hover:bg-white/90">
+              <Button asChild size="lg" className="rounded-lg bg-white text-slate-950 hover:bg-white/90">
                 <a href={topActions[0].href}>Записаться онлайн</a>
               </Button>
-              <Button asChild size="lg" variant="outline" className="rounded-full border-white/20 bg-transparent text-white hover:bg-white/10">
+              <Button asChild size="lg" variant="outline" className="rounded-lg border-white/20 bg-transparent text-white hover:bg-white/10">
                 <a href="tel:+74959671420">
                   <Phone className="h-4 w-4" />
                   +7 (495) 967-14-20

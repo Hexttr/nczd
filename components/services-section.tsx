@@ -25,9 +25,9 @@ export function ServicesSection() {
             return (
               <article
                 key={service.title}
-                className="flex h-full flex-col rounded-[30px] border border-border bg-white p-7 shadow-sm transition-all hover:-translate-y-1 hover:shadow-xl"
+                className="flex h-full flex-col rounded-xl border border-border bg-white p-7 shadow-sm transition-all hover:-translate-y-1 hover:shadow-xl"
               >
-                <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-primary/10 text-primary">
+                <div className="flex h-14 w-14 items-center justify-center rounded-lg bg-primary/10 text-primary">
                   <Icon className="h-6 w-6" />
                 </div>
 
@@ -56,12 +56,12 @@ export function ServicesSection() {
           })}
         </div>
 
-        <div className="mt-8 grid gap-4 rounded-[32px] border border-border bg-white p-5 shadow-sm lg:grid-cols-4">
+        <div className="mt-8 grid gap-4 rounded-xl border border-border bg-white p-5 shadow-sm lg:grid-cols-4">
           {quickLinks.map((item) => (
             <a
               key={item.name}
               href={item.href}
-              className="rounded-2xl border border-border bg-slate-50/70 px-5 py-4 text-sm font-semibold text-foreground transition-colors hover:border-primary hover:text-primary"
+              className="rounded-lg border border-border bg-slate-50/70 px-5 py-4 text-sm font-semibold text-foreground transition-colors hover:border-primary hover:text-primary"
             >
               {item.name}
             </a>

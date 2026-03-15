@@ -18,9 +18,9 @@ export function NewsSection() {
         </div>
 
         <div className="grid gap-6 xl:grid-cols-[1fr_1fr_0.9fr]">
-          <div className="rounded-[32px] border border-border bg-slate-50/70 p-6">
+          <div className="rounded-xl border border-border bg-slate-50/70 p-6">
             <div className="mb-6 flex items-center gap-3">
-              <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-primary/10 text-primary">
+              <div className="flex h-11 w-11 items-center justify-center rounded-lg bg-primary/10 text-primary">
                 <BellRing className="h-5 w-5" />
               </div>
               <div>
@@ -34,14 +34,14 @@ export function NewsSection() {
                 <a
                   key={item.title}
                   href={item.href}
-                  className="block overflow-hidden rounded-[26px] border border-border bg-white transition-colors hover:border-primary hover:text-primary"
+                  className="block overflow-hidden rounded-xl border border-border bg-white transition-colors hover:border-primary hover:text-primary"
                 >
                   <div className="relative aspect-[16/9]">
                     <Image src={item.image} alt={item.title} fill className="object-cover" />
                   </div>
                   <div className="p-4">
                     <div className="mb-3 flex items-center gap-2">
-                      <span className="rounded-full bg-primary/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.16em] text-primary">{item.category}</span>
+                      <span className="rounded-lg bg-primary/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.16em] text-primary">{item.category}</span>
                       <span className="text-xs font-medium text-muted-foreground">{item.date}</span>
                     </div>
                     <p className="text-sm font-semibold leading-7 text-foreground">{item.title}</p>
@@ -51,9 +51,9 @@ export function NewsSection() {
             </div>
           </div>
 
-          <div className="rounded-[32px] border border-border bg-white p-6 shadow-sm">
+          <div className="rounded-xl border border-border bg-white p-6 shadow-sm">
             <div className="mb-6 flex items-center gap-3">
-              <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-emerald-100 text-emerald-700">
+              <div className="flex h-11 w-11 items-center justify-center rounded-lg bg-emerald-100 text-emerald-700">
                 <Newspaper className="h-5 w-5" />
               </div>
               <div>
@@ -67,14 +67,14 @@ export function NewsSection() {
                 <a
                   key={item.title}
                   href={item.href}
-                  className="block overflow-hidden rounded-[26px] border border-border transition-colors hover:border-primary hover:bg-primary/5"
+                  className="block overflow-hidden rounded-xl border border-border transition-colors hover:border-primary hover:bg-primary/5"
                 >
                   <div className="relative aspect-[16/9]">
                     <Image src={item.image} alt={item.title} fill className="object-cover" />
                   </div>
                   <div className="p-4">
                     <div className="mb-3 flex items-center gap-2">
-                      <span className="rounded-full bg-emerald-100 px-3 py-1 text-xs font-semibold uppercase tracking-[0.16em] text-emerald-700">{item.category}</span>
+                      <span className="rounded-lg bg-emerald-100 px-3 py-1 text-xs font-semibold uppercase tracking-[0.16em] text-emerald-700">{item.category}</span>
                       <span className="text-xs font-medium text-muted-foreground">{item.date}</span>
                     </div>
                     <p className="text-sm font-semibold leading-7 text-foreground">{item.title}</p>
@@ -85,9 +85,9 @@ export function NewsSection() {
             </div>
           </div>
 
-          <div className="rounded-[32px] border border-border bg-[linear-gradient(180deg,#f9fbff_0%,#ffffff_100%)] p-6 shadow-sm">
+          <div className="rounded-xl border border-border bg-[linear-gradient(180deg,#f9fbff_0%,#ffffff_100%)] p-6 shadow-sm">
             <div className="mb-6 flex items-center gap-3">
-              <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-amber-100 text-amber-700">
+              <div className="flex h-11 w-11 items-center justify-center rounded-lg bg-amber-100 text-amber-700">
                 <Sparkles className="h-5 w-5" />
               </div>
               <div>
@@ -98,13 +98,13 @@ export function NewsSection() {
 
             <div className="space-y-3">
               {adviceItems.map((item) => (
-                <div key={item} className="rounded-2xl border border-border bg-white px-4 py-3">
+                <div key={item} className="rounded-lg border border-border bg-white px-4 py-3">
                   <p className="text-sm leading-7 text-foreground">{item}</p>
                 </div>
               ))}
             </div>
 
-            <Button asChild variant="outline" className="mt-6 w-full rounded-full">
+            <Button asChild variant="outline" className="mt-6 w-full rounded-lg">
               <a href="https://nczd.ru/info/advices/">
                 Все советы
                 <ArrowRight className="h-4 w-4" />
@@ -113,14 +113,14 @@ export function NewsSection() {
           </div>
         </div>
 
-        <div className="mt-8 grid gap-4 rounded-[32px] border border-border bg-primary p-5 text-primary-foreground md:grid-cols-4">
+        <div className="mt-8 grid gap-4 rounded-xl border border-border bg-primary p-5 text-primary-foreground md:grid-cols-4">
           {[
             "Часто задаваемые вопросы",
             "Консультации специалистов",
             "Телеконсилиумы бесплатно",
             "Заявка на прием",
           ].map((item) => (
-            <div key={item} className="rounded-2xl bg-white/10 px-4 py-4 text-sm font-semibold">
+            <div key={item} className="rounded-lg bg-white/10 px-4 py-4 text-sm font-semibold">
               {item}
             </div>
           ))}
