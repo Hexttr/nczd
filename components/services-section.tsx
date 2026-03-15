@@ -7,7 +7,7 @@ const icons = [HeartPulse, Building2, LaptopMinimal, Globe2, Scissors, Graduatio
 export function ServicesSection() {
   return (
     <section id="services" className="bg-slate-50/75 py-20 lg:py-24">
-      <div className="mx-auto max-w-[1440px] px-4 sm:px-6 xl:px-10">
+      <div className="w-full px-4 sm:px-6 lg:px-8 2xl:px-12">
         <div className="mb-12 max-w-3xl">
           <p className="text-sm font-semibold uppercase tracking-[0.2em] text-primary">Ключевые направления</p>
           <h2 className="mt-3 text-3xl font-extrabold tracking-tight text-foreground sm:text-4xl">

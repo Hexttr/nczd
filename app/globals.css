@@ -4,39 +4,39 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  --background: oklch(0.985 0.002 240);
-  --foreground: oklch(0.145 0.02 240);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.145 0.02 240);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.145 0.02 240);
-  --primary: oklch(0.45 0.15 220);
-  --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.96 0.01 240);
-  --secondary-foreground: oklch(0.25 0.02 240);
-  --muted: oklch(0.95 0.01 240);
-  --muted-foreground: oklch(0.45 0.02 240);
-  --accent: oklch(0.55 0.18 170);
-  --accent-foreground: oklch(0.985 0 0);
+  --background: #f5f9fc;
+  --foreground: #12243a;
+  --card: #ffffff;
+  --card-foreground: #12243a;
+  --popover: #ffffff;
+  --popover-foreground: #12243a;
+  --primary: #1a64a6;
+  --primary-foreground: #ffffff;
+  --secondary: #eaf2f9;
+  --secondary-foreground: #1b3550;
+  --muted: #eef4f8;
+  --muted-foreground: #60748a;
+  --accent: #23b7c5;
+  --accent-foreground: #ffffff;
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(0.577 0.245 27.325);
-  --border: oklch(0.90 0.01 240);
-  --input: oklch(0.95 0.01 240);
-  --ring: oklch(0.45 0.15 220);
-  --chart-1: oklch(0.45 0.15 220);
-  --chart-2: oklch(0.55 0.18 170);
-  --chart-3: oklch(0.65 0.12 280);
-  --chart-4: oklch(0.70 0.15 50);
-  --chart-5: oklch(0.60 0.20 30);
+  --border: #d8e3ed;
+  --input: #eef4f8;
+  --ring: #1a64a6;
+  --chart-1: #1a64a6;
+  --chart-2: #23b7c5;
+  --chart-3: #6bb7e7;
+  --chart-4: #6fd1c7;
+  --chart-5: #2c83c3;
   --radius: 0.75rem;
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.145 0.02 240);
-  --sidebar-primary: oklch(0.45 0.15 220);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.96 0.01 240);
-  --sidebar-accent-foreground: oklch(0.25 0.02 240);
-  --sidebar-border: oklch(0.90 0.01 240);
-  --sidebar-ring: oklch(0.45 0.15 220);
+  --sidebar: #ffffff;
+  --sidebar-foreground: #12243a;
+  --sidebar-primary: #1a64a6;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #eef4f8;
+  --sidebar-accent-foreground: #1b3550;
+  --sidebar-border: #d8e3ed;
+  --sidebar-ring: #1a64a6;
 }
 
 .dark {
@@ -123,6 +123,7 @@
   body {
     @apply bg-background text-foreground;
     font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+    background-image: radial-gradient(circle at top left, rgba(26, 100, 166, 0.05), transparent 22%);
   }
 
   html {

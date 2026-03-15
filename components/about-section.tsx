@@ -1,3 +1,4 @@
+import Image from "next/image"
 import { ArrowRight, BookOpenText, CheckCircle2, FileHeart, PlayCircle, ShieldPlus, Stethoscope } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import {
@@ -19,7 +20,7 @@ const features = [
 export function AboutSection() {
   return (
     <section id="about" className="bg-slate-50/65 py-20">
-      <div className="mx-auto max-w-[1440px] space-y-16 px-4 sm:px-6 xl:px-10">
+      <div className="w-full space-y-16 px-4 sm:px-6 lg:px-8 2xl:px-12">
         <div className="grid gap-8 lg:grid-cols-[1.05fr_0.95fr] lg:items-start">
           <div>
             <p className="text-sm font-semibold uppercase tracking-[0.2em] text-primary">О центре</p>
@@ -125,11 +126,16 @@ export function AboutSection() {
           <div className="rounded-[32px] border border-border bg-white p-6 shadow-sm">
             <p className="text-sm font-semibold uppercase tracking-[0.18em] text-primary">Благодарности</p>
             <h3 className="mt-2 text-2xl font-extrabold text-foreground">Социальное доказательство</h3>
-            <div className="mt-6 grid gap-3">
+            <div className="mt-6 grid gap-4 sm:grid-cols-2">
               {gratitudeItems.map((item) => (
-                <div key={item} className="rounded-2xl border border-border bg-slate-50/70 px-4 py-3 text-sm font-medium text-foreground">
-                  {item}
-                </div>
+                <article key={item.title} className="overflow-hidden rounded-[26px] border border-border bg-slate-50/70">
+                  <div className="relative aspect-[4/3]">
+                    <Image src={item.image} alt={item.title} fill className="object-cover" />
+                  </div>
+                  <div className="px-4 py-4">
+                    <p className="text-sm font-semibold leading-7 text-foreground">{item.title}</p>
+                  </div>
+                </article>
               ))}
             </div>
           </div>

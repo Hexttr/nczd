@@ -1,3 +1,4 @@
+import Image from "next/image"
 import { ArrowRight, BellRing, Newspaper, Sparkles } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { adviceItems, announcements, newsItems } from "@/lib/site-content"
@@ -5,7 +6,7 @@ import { adviceItems, announcements, newsItems } from "@/lib/site-content"
 export function NewsSection() {
   return (
     <section id="news" className="bg-background py-20">
-      <div className="mx-auto max-w-[1440px] px-4 sm:px-6 xl:px-10">
+      <div className="w-full px-4 sm:px-6 lg:px-8 2xl:px-12">
         <div className="mb-10 max-w-3xl">
           <p className="text-sm font-semibold uppercase tracking-[0.2em] text-primary">Контент главной</p>
           <h2 className="mt-3 text-3xl font-extrabold tracking-tight text-foreground sm:text-4xl">
@@ -33,9 +34,18 @@ export function NewsSection() {
                 <a
                   key={item.title}
                   href={item.href}
-                  className="block rounded-2xl border border-border bg-white px-4 py-4 transition-colors hover:border-primary hover:text-primary"
+                  className="block overflow-hidden rounded-[26px] border border-border bg-white transition-colors hover:border-primary hover:text-primary"
                 >
-                  <p className="text-sm font-semibold leading-7 text-foreground">{item.title}</p>
+                  <div className="relative aspect-[16/9]">
+                    <Image src={item.image} alt={item.title} fill className="object-cover" />
+                  </div>
+                  <div className="p-4">
+                    <div className="mb-3 flex items-center gap-2">
+                      <span className="rounded-full bg-primary/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.16em] text-primary">{item.category}</span>
+                      <span className="text-xs font-medium text-muted-foreground">{item.date}</span>
+                    </div>
+                    <p className="text-sm font-semibold leading-7 text-foreground">{item.title}</p>
+                  </div>
                 </a>
               ))}
             </div>
@@ -57,9 +67,19 @@ export function NewsSection() {
                 <a
                   key={item.title}
                   href={item.href}
-                  className="block rounded-2xl border border-border px-4 py-4 transition-colors hover:border-primary hover:bg-primary/5"
+                  className="block overflow-hidden rounded-[26px] border border-border transition-colors hover:border-primary hover:bg-primary/5"
                 >
-                  <p className="text-sm font-semibold leading-7 text-foreground">{item.title}</p>
+                  <div className="relative aspect-[16/9]">
+                    <Image src={item.image} alt={item.title} fill className="object-cover" />
+                  </div>
+                  <div className="p-4">
+                    <div className="mb-3 flex items-center gap-2">
+                      <span className="rounded-full bg-emerald-100 px-3 py-1 text-xs font-semibold uppercase tracking-[0.16em] text-emerald-700">{item.category}</span>
+                      <span className="text-xs font-medium text-muted-foreground">{item.date}</span>
+                    </div>
+                    <p className="text-sm font-semibold leading-7 text-foreground">{item.title}</p>
+                    <p className="mt-2 text-sm leading-6 text-muted-foreground">{item.excerpt}</p>
+                  </div>
                 </a>
               ))}
             </div>

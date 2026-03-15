@@ -1,3 +1,4 @@
+import Image from "next/image"
 import Link from "next/link"
 import { Mail, MapPin, Phone } from "lucide-react"
 import { Button } from "@/components/ui/button"
@@ -7,7 +8,7 @@ export function Footer() {
   return (
     <footer className="bg-slate-950 text-white">
       <div className="border-b border-white/10">
-        <div className="mx-auto max-w-[1440px] px-4 py-12 sm:px-6 xl:px-10">
+        <div className="w-full px-4 py-12 sm:px-6 lg:px-8 2xl:px-12">
           <div className="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
             <div>
               <p className="text-sm font-semibold uppercase tracking-[0.2em] text-white/60">Финальный CTA</p>
@@ -34,13 +35,17 @@ export function Footer() {
         </div>
       </div>
 
-      <div className="mx-auto max-w-[1440px] px-4 py-12 sm:px-6 xl:px-10">
+      <div className="w-full px-4 py-12 sm:px-6 lg:px-8 2xl:px-12">
         <div className="grid gap-8 lg:grid-cols-[1.1fr_1fr_1fr_1fr]">
           <div>
             <Link href="/" className="flex items-center gap-3">
-              <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-primary text-lg font-extrabold text-primary-foreground shadow-lg shadow-primary/20">
-                НЦ
-              </div>
+              <Image
+                src="/images/nczd-logo-blue.png"
+                alt="Логотип НЦЗД"
+                width={64}
+                height={64}
+                className="h-12 w-auto rounded-xl bg-white p-1.5"
+              />
               <div>
                 <p className="font-extrabold leading-tight text-white">НМИЦ здоровья детей</p>
                 <p className="text-xs text-white/60">Минздрав России</p>
@@ -85,7 +90,7 @@ export function Footer() {
       </div>
 
       <div className="border-t border-background/10">
-        <div className="mx-auto flex max-w-[1440px] flex-col gap-4 px-4 py-6 text-sm text-white/55 sm:flex-row sm:items-center sm:justify-between sm:px-6 xl:px-10">
+        <div className="flex w-full flex-col gap-4 px-4 py-6 text-sm text-white/55 sm:flex-row sm:items-center sm:justify-between sm:px-6 lg:px-8 2xl:px-12">
           <p>© 2026 ФГАУ «НМИЦ здоровья детей» Минздрава России</p>
           <div className="flex flex-wrap gap-4">
             <Link href="https://nczd.ru/" className="transition-colors hover:text-white">

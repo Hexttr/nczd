@@ -3,7 +3,7 @@ import { stats } from "@/lib/site-content"
 export function StatsSection() {
   return (
     <section className="bg-[linear-gradient(135deg,#0f4e79_0%,#12638f_50%,#0c6a8f_100%)] py-20 text-primary-foreground">
-      <div className="mx-auto max-w-[1440px] px-4 sm:px-6 xl:px-10">
+      <div className="w-full px-4 sm:px-6 lg:px-8 2xl:px-12">
         <div className="mb-12 max-w-3xl">
           <p className="text-sm font-semibold uppercase tracking-[0.2em] text-primary-foreground/70">Центр в цифрах</p>
           <h2 className="mt-3 text-3xl font-extrabold tracking-tight sm:text-4xl">

@@ -82,47 +82,57 @@ export const promotions = [
   {
     title: "Баланс здоровья",
     audience: "Дети",
+    category: "Эндокринология",
     price: "3 500 руб.",
     oldPrice: "5 300 руб.",
     subtitle: "Комплексная диагностика и профилактика эндокринологических заболеваний",
     description: "Первичный прием врача-детского эндокринолога + УЗИ щитовидной железы",
     period: "С 16 февраля по 31 марта 2026",
+    image: "/images/placeholders/promo-endocrine.svg",
   },
   {
     title: "Баланс здоровья",
     audience: "Дети",
+    category: "Эндокринология",
     price: "4 500 руб.",
     oldPrice: "6 600 руб.",
     subtitle: "Комплексная диагностика и профилактика эндокринологических заболеваний",
     description: "Первичный прием врача-детского эндокринолога, к.м.н. + УЗИ щитовидной железы",
     period: "С 16 февраля по 31 марта 2026",
+    image: "/images/placeholders/promo-endocrine.svg",
   },
   {
     title: "Баланс здоровья",
     audience: "Дети",
+    category: "Кардиология",
     price: "7 000 руб.",
     oldPrice: "9 000 руб.",
     subtitle: "Комплексная диагностика и профилактика кардиологических заболеваний",
     description: "Первичный прием врача-кардиолога + УЗИ сердца + ЭКГ с расшифровкой",
     period: "С 16 февраля по 30 марта 2026",
+    image: "/images/placeholders/promo-cardiology.svg",
   },
   {
     title: "Здоровое сердце",
     audience: "Дети",
+    category: "Кардиология",
     price: "5 000 руб.",
     oldPrice: "6 800 руб.",
     subtitle: "Комплексная диагностика и профилактика кардиологических заболеваний",
     description: "Первичный прием врача-кардиолога, к.м.н. + регистрация ЭКГ с расшифровкой",
     period: "С 16 февраля по 31 марта 2026",
+    image: "/images/placeholders/promo-cardiology.svg",
   },
   {
     title: "Здоровый желудок",
     audience: "",
+    category: "Гастроэнтерология",
     price: "6 000 руб.",
     oldPrice: "8 100 руб.",
     subtitle: "Гастроэнтерологические заболевания: комплексная диагностика и профилактика",
     description: "Первичный прием врача-гастроэнтеролога, к.м.н. + УЗИ органов брюшной полости",
     period: "С 16 февраля по 31 марта 2026",
+    image: "/images/placeholders/promo-gastro.svg",
   },
 ]
 
@@ -207,39 +217,67 @@ export const stats = [
 
 export const announcements = [
   {
+    date: "12 марта 2026",
+    category: "Анонс",
     title: "Конференция образовательного проекта «Школа здоровья детей», приуроченная ко Всемирному дню иммунитета — 12 марта 2026 года",
     href: "https://nczd.ru/immunitet-26/",
+    image: "/images/placeholders/news-conference.svg",
   },
   {
+    date: "14 марта 2026",
+    category: "Анонс",
     title: "14 марта 2026 года состоится конференция «Маммология от А до Я. Работа над ошибками»",
     href: "https://nczd.ru/2026-03-14/",
+    image: "/images/placeholders/news-conference.svg",
   },
   {
+    date: "28 июля 2023",
+    category: "Публикация",
     title: "Справочник «Педиатру на каждый день-2022. Лихорадки» под редакцией В.К. Таточенко и М.Д. Бакрадзе",
     href: "https://nczd.ru/2023-07-28/",
+    image: "/images/placeholders/news-conference.svg",
   },
   {
+    date: "2023",
+    category: "Издание",
     title: "Сборник очерков «История детской хирургии» под редакцией А.П. Фисенко",
     href: "https://nczd.ru/sbornik-ocherkov-istorija-detskoj-hirurgii/",
+    image: "/images/placeholders/news-conference.svg",
   },
 ]
 
 export const newsItems = [
   {
+    date: "27 февраля 2026",
+    category: "Новости",
     title: "27 февраля 2026 года в Музее Москвы состоялось открытие новой экспозиции проекта «Москва без окраин»",
+    excerpt: "Свежая публикация о событиях центра и внешних проектах с участием НЦЗД.",
     href: "https://nczd.ru/27-fevralja-2026-god-v-muzee-moskvy-sostojalos-otkrytie-novoj-jekspozicii-proekta-moskva-bez-okrain/",
+    image: "/images/placeholders/news-conference.svg",
   },
   {
+    date: "26 февраля 2026",
+    category: "Конференция",
     title: "26 февраля состоялась научно-практическая конференция Школы здоровья детей, посвященная диагностике и лечению редких заболеваний у детей",
+    excerpt: "Научно-практическая повестка и разбор редких заболеваний у детей.",
     href: "https://nczd.ru/2026-02-26/",
+    image: "/images/placeholders/news-conference.svg",
   },
   {
+    date: "23 февраля 2026",
+    category: "Событие",
     title: "23 февраля — День защитника Отечества!",
+    excerpt: "Новостная публикация центра с поздравлением и медиаматериалами.",
     href: "https://nczd.ru/2026-02-23/",
+    image: "/images/placeholders/news-conference.svg",
   },
   {
+    date: "12 февраля 2026",
+    category: "Практикум",
     title: "12 февраля 2026 года состоялся «Капрановский практикум. Интерактивный разбор клинических случаев»",
+    excerpt: "Образовательный проект и клинический разбор для профессиональной аудитории.",
     href: "https://nczd.ru/2026-02-16/",
+    image: "/images/placeholders/news-conference.svg",
   },
 ]
 
@@ -301,14 +339,14 @@ export const surgeryNews = [
 ]
 
 export const gratitudeItems = [
-  "Благодарность от 2025-06-05",
-  "Благодарность от 2025-06-01",
-  "Сертификат участника международной акции «Сад памяти»",
-  "Благодарность от 2024-09-20",
-  "Благодарность от 2024-09-05",
-  "Благодарность от 2024-07-10",
-  "Благодарность от 2024-06-25",
-  "Благодарность от 2024-06-18",
+  { title: "Благодарность от 2025-06-05", image: "/images/placeholders/gratitude-placeholder.svg" },
+  { title: "Благодарность от 2025-06-01", image: "/images/placeholders/gratitude-placeholder.svg" },
+  { title: "Сертификат участника международной акции «Сад памяти»", image: "/images/placeholders/gratitude-placeholder.svg" },
+  { title: "Благодарность от 2024-09-20", image: "/images/placeholders/gratitude-placeholder.svg" },
+  { title: "Благодарность от 2024-09-05", image: "/images/placeholders/gratitude-placeholder.svg" },
+  { title: "Благодарность от 2024-07-10", image: "/images/placeholders/gratitude-placeholder.svg" },
+  { title: "Благодарность от 2024-06-25", image: "/images/placeholders/gratitude-placeholder.svg" },
+  { title: "Благодарность от 2024-06-18", image: "/images/placeholders/gratitude-placeholder.svg" },
 ]
 
 export const qualityLinks = [
