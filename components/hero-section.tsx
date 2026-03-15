@@ -60,10 +60,10 @@ export function HeroSection() {
           <div className="relative overflow-hidden rounded-xl border border-white/70 bg-white p-4 shadow-[0_28px_90px_rgba(16,45,83,0.12)] sm:p-5">
             <div className="relative overflow-hidden rounded-lg bg-[#eef6fc]">
               <Image
-                src="/images/placeholders/hero-medical.svg"
-                alt="Визуальный блок главной страницы НЦЗД"
-                width={1600}
-                height={1100}
+                src="/images/em.webp"
+                alt="Круглосуточная госпитализация — забота о детях в НЦЗД"
+                width={1200}
+                height={800}
                 className="h-auto w-full object-cover"
                 priority
               />

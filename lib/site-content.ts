@@ -134,6 +134,28 @@ export const promotions = [
     period: "С 16 февраля по 31 марта 2026",
     image: "/images/placeholders/promo-gastro.svg",
   },
+  {
+    title: "Здоровый желудок",
+    audience: "",
+    category: "Гастроэнтерология",
+    price: "6 000 руб.",
+    oldPrice: "8 100 руб.",
+    subtitle: "Гастроэнтерологические заболевания: комплексная диагностика и профилактика",
+    description: "Первичный прием (осмотр, консультация) врача-гастроэнтеролога, к.м.н. + УЗИ органов брюшной полости",
+    period: "С 16 февраля по 31 марта 2026",
+    image: "/images/placeholders/promo-gastro.svg",
+  },
+  {
+    title: "Здоровый желудок",
+    audience: "",
+    category: "Гастроэнтерология",
+    price: "6 000 руб.",
+    oldPrice: "8 100 руб.",
+    subtitle: "Гастроэнтерологические заболевания: комплексная диагностика и профилактика",
+    description: "Первичный прием врача-гастроэнтеролога, к.м.н. + Ультразвуковое исследование органов брюшной полости",
+    period: "С 16 февраля по 31 марта 2026",
+    image: "/images/placeholders/promo-gastro.svg",
+  },
 ]
 
 export const serviceHighlights = [
