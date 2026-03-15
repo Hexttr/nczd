@@ -8,6 +8,27 @@ import { Button } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
 import { navigation, topActions } from "@/lib/site-content"
 
+function MobileBrandBlock() {
+  return (
+    <Link href="/" className="flex min-w-0 items-center gap-2">
+      <Image
+        src="/images/nczd-logo-blue.png"
+        alt="Логотип НЦЗД"
+        width={44}
+        height={44}
+        className="h-10 w-auto shrink-0 object-contain sm:h-11"
+        priority
+      />
+      <div className="min-w-0">
+        <p className="text-[11px] font-extrabold uppercase leading-tight tracking-wide text-foreground sm:text-xs">
+          Национальный медицинский исследовательский центр здоровья детей
+        </p>
+        <p className="mt-0.5 truncate text-[10px] text-muted-foreground">ФГАУ Минздрава России</p>
+      </div>
+    </Link>
+  )
+}
+
 function BrandBlock() {
   return (
     <div className="flex w-full flex-wrap items-center justify-between gap-4">
@@ -25,7 +46,7 @@ function BrandBlock() {
             Национальный медицинский исследовательский центр здоровья детей
           </p>
           <p className="mt-0.5 max-w-[720px] text-xs leading-relaxed text-muted-foreground sm:text-sm">
-            Федеральное государственное автономное учреждение Министерства здравоохранения Российской Федерации
+            ФГАУ Минздрава России
           </p>
         </div>
       </Link>
@@ -54,7 +75,7 @@ export function Header() {
 
   return (
     <header className={cn("sticky top-0 z-50 border-b border-border/60 bg-background/95 backdrop-blur", accessibilityMode && "text-[1.05rem]")}>
-      <div className="border-b border-border/60 bg-[linear-gradient(90deg,rgba(26,100,166,0.08),rgba(35,183,197,0.05),rgba(255,255,255,0.7))]">
+      <div className="hidden border-b border-border/60 bg-[linear-gradient(90deg,rgba(26,100,166,0.08),rgba(35,183,197,0.05),rgba(255,255,255,0.7))] lg:block">
         <div className="w-full px-4 py-3 sm:px-6 lg:px-8 2xl:px-12">
           <div className="flex flex-col gap-4">
             <div className="flex flex-col gap-3 xl:flex-row xl:items-center xl:justify-between">
@@ -63,7 +84,7 @@ export function Header() {
                 <a
                   key={item.name}
                   href={item.href}
-                  className="rounded-lg bg-white px-3 py-1.5 shadow-sm ring-1 ring-border transition-colors hover:text-primary"
+                  className="rounded-lg bg-primary px-3 py-1.5 font-medium text-primary-foreground shadow-sm transition-colors hover:bg-primary/90"
                 >
                   {item.name}
                 </a>
@@ -142,14 +163,14 @@ export function Header() {
         </div>
       </nav>
 
-      <div className="flex w-full items-center justify-between px-4 py-4 lg:hidden sm:px-6">
-        <div className="max-w-[82%]">
-          <BrandBlock />
+      <div className="flex w-full items-center justify-between gap-3 border-b border-border/60 bg-background px-4 py-3 lg:hidden sm:px-6">
+        <div className="min-w-0 flex-1">
+          <MobileBrandBlock />
         </div>
         <button
           type="button"
           onClick={() => setMobileMenuOpen((value) => !value)}
-          className="inline-flex h-11 w-11 items-center justify-center rounded-lg border border-border bg-white text-foreground shadow-sm"
+          className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-lg border border-border bg-white text-foreground shadow-sm"
           aria-label="Открыть меню"
         >
           {mobileMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
@@ -157,15 +178,15 @@ export function Header() {
       </div>
 
       <div className={cn("lg:hidden", mobileMenuOpen ? "block" : "hidden")}>
-        <div className="border-t border-border bg-background px-4 pb-6 pt-2 sm:px-6">
-          <div className="mb-4 grid gap-3">
-            <a href="tel:+74959671420" className="rounded-lg border border-border bg-white px-4 py-3 text-sm font-semibold shadow-sm">
+        <div className="border-t border-border bg-background px-4 pb-4 pt-3 sm:px-6">
+          <div className="mb-3 grid gap-2">
+            <a href="tel:+74959671420" className="rounded-lg border border-border bg-white px-3 py-2.5 text-sm font-semibold shadow-sm">
               +7 (495) 967-14-20
             </a>
-            <Button asChild className="h-12 rounded-lg bg-primary">
+            <Button asChild className="h-10 rounded-lg bg-primary">
               <a href="https://nczd.ru/form/appointment/">Записаться на прием</a>
             </Button>
-            <Button asChild variant="outline" className="h-12 rounded-lg">
+            <Button asChild variant="outline" className="h-10 rounded-lg">
               <a href="/cabinet">Личный кабинет</a>
             </Button>
           </div>

@@ -67,10 +67,10 @@ export function PromotionsSection() {
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-[#0e4e7e]/90 via-[#0e4e7e]/35 to-transparent" />
                     <div className="absolute left-5 top-5 flex items-center gap-2">
-                      <span className="rounded-lg bg-white/92 px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-primary">
+                      <span className="rounded-lg bg-primary px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-primary-foreground">
                         Акция
                       </span>
-                      <span className="rounded-lg bg-white/15 px-3 py-1 text-xs font-semibold text-white backdrop-blur-sm">
+                      <span className="rounded-lg bg-primary/90 px-3 py-1 text-xs font-semibold text-primary-foreground">
                         {promo.category}
                       </span>
                     </div>
@@ -80,22 +80,22 @@ export function PromotionsSection() {
                     </div>
                   </div>
 
-                  <div className="flex h-full flex-col p-5">
+                  <div className="flex flex-col p-5">
                     <p className="text-sm font-semibold uppercase tracking-wide text-sky-700">{promo.subtitle}</p>
-                    <p className="mt-3 text-sm leading-7 text-muted-foreground line-clamp-2">{promo.description}</p>
+                    <p className="mt-2 text-sm leading-6 text-muted-foreground line-clamp-2">{promo.description}</p>
 
                     <div className="mt-4 flex items-end gap-3">
-                      <span className="text-2xl font-extrabold text-foreground">{promo.price}</span>
-                      <span className="pb-1 text-sm text-muted-foreground line-through">{promo.oldPrice}</span>
+                      <span className="text-3xl font-extrabold text-foreground">{promo.price}</span>
+                      <span className="pb-1.5 text-base text-muted-foreground line-through">{promo.oldPrice}</span>
                     </div>
 
-                    <div className="mt-3 flex items-center gap-2 text-sm text-muted-foreground">
+                    <div className="mt-2 flex items-center gap-2 text-sm text-muted-foreground">
                       <Clock3 className="h-4 w-4 shrink-0 text-primary" />
                       <span className="truncate">{promo.period}</span>
                     </div>
 
-                    <div className="mt-auto pt-4">
-                      <Button asChild size="sm" className="w-full rounded-lg">
+                    <div className="mt-4">
+                      <Button asChild className="rounded-lg px-6 py-2.5 text-base font-semibold uppercase">
                         <a href="https://nczd.ru/form/appointment/">Записаться</a>
                       </Button>
                     </div>
