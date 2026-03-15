@@ -88,7 +88,7 @@ export const promotions = [
     subtitle: "Комплексная диагностика и профилактика эндокринологических заболеваний",
     description: "Первичный прием врача-детского эндокринолога + УЗИ щитовидной железы",
     period: "С 16 февраля по 31 марта 2026",
-    image: "/images/placeholders/promo-endocrine.svg",
+    image: "/images/promo-endocrine.webp",
   },
   {
     title: "Баланс здоровья",
@@ -99,7 +99,7 @@ export const promotions = [
     subtitle: "Комплексная диагностика и профилактика эндокринологических заболеваний",
     description: "Первичный прием врача-детского эндокринолога, к.м.н. + УЗИ щитовидной железы",
     period: "С 16 февраля по 31 марта 2026",
-    image: "/images/placeholders/promo-endocrine.svg",
+    image: "/images/promo-endocrine.webp",
   },
   {
     title: "Баланс здоровья",
@@ -110,7 +110,7 @@ export const promotions = [
     subtitle: "Комплексная диагностика и профилактика кардиологических заболеваний",
     description: "Первичный прием врача-кардиолога + УЗИ сердца + ЭКГ с расшифровкой",
     period: "С 16 февраля по 30 марта 2026",
-    image: "/images/placeholders/promo-cardiology.svg",
+    image: "/images/promo-cardiology.webp",
   },
   {
     title: "Здоровое сердце",
@@ -121,7 +121,7 @@ export const promotions = [
     subtitle: "Комплексная диагностика и профилактика кардиологических заболеваний",
     description: "Первичный прием врача-кардиолога, к.м.н. + регистрация ЭКГ с расшифровкой",
     period: "С 16 февраля по 31 марта 2026",
-    image: "/images/placeholders/promo-cardiology.svg",
+    image: "/images/promo-cardiology.webp",
   },
   {
     title: "Здоровый желудок",
@@ -132,7 +132,7 @@ export const promotions = [
     subtitle: "Гастроэнтерологические заболевания: комплексная диагностика и профилактика",
     description: "Первичный прием врача-гастроэнтеролога, к.м.н. + УЗИ органов брюшной полости",
     period: "С 16 февраля по 31 марта 2026",
-    image: "/images/placeholders/promo-gastro.svg",
+    image: "/images/promo-gastro.webp",
   },
   {
     title: "Здоровый желудок",
@@ -143,7 +143,7 @@ export const promotions = [
     subtitle: "Гастроэнтерологические заболевания: комплексная диагностика и профилактика",
     description: "Первичный прием (осмотр, консультация) врача-гастроэнтеролога, к.м.н. + УЗИ органов брюшной полости",
     period: "С 16 февраля по 31 марта 2026",
-    image: "/images/placeholders/promo-gastro.svg",
+    image: "/images/promo-gastro.webp",
   },
   {
     title: "Здоровый желудок",
@@ -154,7 +154,7 @@ export const promotions = [
     subtitle: "Гастроэнтерологические заболевания: комплексная диагностика и профилактика",
     description: "Первичный прием врача-гастроэнтеролога, к.м.н. + Ультразвуковое исследование органов брюшной полости",
     period: "С 16 февраля по 31 марта 2026",
-    image: "/images/placeholders/promo-gastro.svg",
+    image: "/images/promo-gastro.webp",
   },
 ]
 
