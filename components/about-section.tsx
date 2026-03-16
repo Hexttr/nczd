@@ -1,14 +1,38 @@
 import Image from "next/image"
-import { ArrowRight, BookOpenText, CheckCircle2, FileHeart, PlayCircle, ShieldPlus, Stethoscope } from "lucide-react"
+import {
+  Activity,
+  ArrowRight,
+  Award,
+  Building2,
+  CalendarCheck,
+  CheckCircle2,
+  GraduationCap,
+  PlayCircle,
+  Stethoscope,
+  Users,
+  Video,
+} from "lucide-react"
 import { Button } from "@/components/ui/button"
 import {
   aboutCenter,
   clinicalCases,
   gratitudeItems,
   qualityLinks,
+  stats,
   surgeryNews,
   usefulVideos,
 } from "@/lib/site-content"
+
+const statIcons: Record<string, React.ComponentType<{ className?: string }>> = {
+  Подразделений: Building2,
+  Пациентов: Users,
+  Операции: Activity,
+  "Консультаций амбулаторно": CalendarCheck,
+  Врача: Stethoscope,
+  "Доктора наук": GraduationCap,
+  "Кандидатов наук": Award,
+  Телеконсультаций: Video,
+}
 
 const features = [
   "Многопрофильная высокотехнологичная медицинская помощь",
@@ -44,27 +68,22 @@ export function AboutSection() {
             </div>
           </div>
 
-          <div className="grid gap-4 sm:grid-cols-2">
-            <div className="rounded-xl bg-primary p-6 text-primary-foreground shadow-lg shadow-primary/15">
-              <ShieldPlus className="h-7 w-7 text-primary-foreground/80" />
-              <p className="mt-6 text-4xl font-extrabold">41+</p>
-              <p className="mt-2 text-sm text-primary-foreground/75">Педиатрических специальностей в консультативной помощи</p>
-            </div>
-            <div className="rounded-xl border border-border bg-white p-6 shadow-sm">
-              <Stethoscope className="h-7 w-7 text-primary" />
-              <p className="mt-6 text-4xl font-extrabold text-foreground">155</p>
-              <p className="mt-2 text-sm text-muted-foreground">Специалистов консультативно-диагностического центра</p>
-            </div>
-            <div className="rounded-xl border border-border bg-white p-6 shadow-sm">
-              <BookOpenText className="h-7 w-7 text-primary" />
-              <p className="mt-6 text-4xl font-extrabold text-foreground">64</p>
-              <p className="mt-2 text-sm text-muted-foreground">Доктора наук и сильная научная база</p>
-            </div>
-            <div className="rounded-xl bg-emerald-500 p-6 text-white shadow-lg shadow-emerald-500/15">
-              <FileHeart className="h-7 w-7 text-white/80" />
-              <p className="mt-6 text-4xl font-extrabold">24/7</p>
-              <p className="mt-2 text-sm text-white/80">Экстренная маршрутизация пациентов и круглосуточная помощь</p>
-            </div>
+          <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
+            {stats.map((stat) => {
+              const Icon = statIcons[stat.label] ?? Building2
+              return (
+                <div
+                  key={stat.label}
+                  className="flex flex-col rounded-xl border border-border bg-white p-5 shadow-sm transition-shadow hover:shadow-md"
+                >
+                  <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 text-primary">
+                    <Icon className="h-6 w-6" />
+                  </div>
+                  <p className="mt-4 text-2xl font-extrabold text-foreground sm:text-3xl">{stat.value}</p>
+                  <p className="mt-2 text-sm leading-6 text-muted-foreground">{stat.label}</p>
+                </div>
+              )
+            })}
           </div>
         </div>
 
